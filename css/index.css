@@ -2,14 +2,14 @@
 
 body{margin: 0; background-color: rgb(44, 44, 44);}
 
-#wrap{width: 1000px; margin: 0 auto;}
+#wrap{width: 1200px; margin: 0 auto;}
 
 a{text-decoration: none; color: #111111;}
 
 #header{display: flex; justify-content: space-between; align-items: center; width: 98%; height: auto; background-color: #F2F2F2; padding: 10px 1%;}
 #header .logo{font-size: 30px; font-weight: bold;}
 #header .logo a{font-family: 'Playfair Display', serif;}
-#header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 270px;}
+#header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 350px;}
 #header .menu-bar li{ padding: 8px 12px; display: inline-block; font-size: 17px; transition: .5s;}
 #header .menu-bar a:hover{color: #F29727}
 #header .menu-bar-btm{display: none; position: absolute; right: 17px; font-size: 20px;}
@@ -18,7 +18,7 @@ a{text-decoration: none; color: #111111;}
 #header .search-box{
     padding: 5px; 
     position: absolute; 
-    top: 5.5%; right: 12%; 
+    top: 5.5%; right: 10%; 
     transform: translate(0%, -50%); 
     height: 30px; 
     border-radius: 30px; 
@@ -86,9 +86,12 @@ a{text-decoration: none; color: #111111;}
 #footer .logo{float: left; width: 50%; height: 200px; background-color: rgb(78, 71, 143);}
 #footer .links{float: left; width: 50%; height: 200px; background-color: rgb(45, 39, 102);}
 
-@media(max-width: 1030px){
+@media(max-width: 1200px){
     #header .search-box{
         right: 2%;
+    }
+    #header .menu-bar{
+        padding-right: 530px;
     }
 }
 
