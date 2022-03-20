@@ -59,15 +59,15 @@ a{text-decoration: none; color: #111111;}
 #information .welcome > h1{font-family: 'Playfair Display', serif;}
 #information .welcome > p{font-size: 20px;}
 #information .information{width: 100%; height: 200px; background-color: #e9e9e9}
-#information .content{width: 100%; height: 200px; background-color: #737373}
+#information .content{width: 100%; height: 200px; background-color: #c7c7c7}
 
 #images{overflow: hidden; width: 100%; height: auto;}
-#images .img1{float: left; width: 33.3333%; height: 300px; background-image: url('../image/Fatima\ Cigarette\ \(1920\).jpg');}
-#images .img2{float: left; width: 33.3333%; height: 300px; background-image: url('../image/Spanish\ Shawl\ \(c.\ 1922\)\ \(1\).jpg');}
-#images .img3{float: left; width: 33.3333%; height: 300px; background-image: url('../image/Fitted\ for\ a\ Suit\ \(1916\)\ \(1\).jpg');}
-#images .img4{float: left; width: 33.3333%; height: 300px; background-image: url('../image/Lucky\ Bag\ Girl\ \(1910\)\ \(1\).jpg');}
-#images .img5{float: left; width: 33.3333%; height: 300px; background-image: url('../image/Man\ with\ Narrow\ Tie\,\ Cluett\ Shir.jpg');}
-#images .img6{float: left; width: 33.3333%; height: 300px; background-image: url('../image/House\ of\ Kuppenheimer\ ad\ illustr.jpg');}
+#images .img1{float: left; width: 33.3333%; height: 300px; background-image:url('../image/El\ Pescador.jpg')}
+#images .img2{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Fisherwomen\ from\ Valencia\ \(1915\).jpg')}
+#images .img3{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Strolling\ along\ the\ Seashore\ \(19.jpg')}
+#images .img4{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Children\ On\ The\ Beach\,\ Valencia.jpg')}
+#images .img5{float: left; width: 33.3333%; height: 300px; background-image:url('../image/The\ Wounded\ Foot\ \(1909\).jpg')}
+#images .img6{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Vuelta\ De\ La\ Pesca.\ Playa\ De\ Val.jpg')}
 
 #images .img1:hover{overflow: hidden; opacity: 0.3;}
 #images .img2:hover{overflow: hidden; opacity: 0.3;}
@@ -76,7 +76,7 @@ a{text-decoration: none; color: #111111;}
 #images .img5:hover{overflow: hidden; opacity: 0.3;}
 #images .img6:hover{overflow: hidden; opacity: 0.3;}
 
-#summary{overflow: hidden; width: 100%; height: 450px; background-color: #6b9bc0;}
+#summary{overflow: hidden; width: 100%; height: 400px; background-color: #6b9bc0;}
 #summary .content1{float: left; width: 25%; height: 450px; background-color: rgb(124, 117, 192);}
 #summary .content2{float: left; width: 25%; height: 450px; background-color: rgb(100, 93, 158);}
 #summary .content3{float: left; width: 25%; height: 450px; background-color: rgb(86, 81, 131);}
