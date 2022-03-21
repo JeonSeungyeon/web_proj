@@ -4,13 +4,14 @@ body{margin: 0; background-color: rgb(44, 44, 44);}
 
 #wrap{width: 1200px; margin: 0 auto;}
 
+ul,li{list-style: none;}
 a{text-decoration: none; color: #111111;}
 
 #header{display: flex; justify-content: space-between; align-items: center; width: 98%; height: auto; background-color: #F2F2F2; padding: 10px 1%;}
 #header .logo{font-size: 30px; font-weight: bold;}
 #header .logo a{font-family: 'Playfair Display', serif;}
 #header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 350px;}
-#header .menu-bar li{ padding: 8px 12px; display: inline-block; font-size: 17px; transition: .5s;}
+#header .menu-bar li{ padding: 8px 15px; display: inline-block; font-size: 17px; transition: .5s;}
 #header .menu-bar a:hover{color: #F29727}
 #header .menu-bar-btm{display: none; position: absolute; right: 17px; font-size: 20px;}
 
@@ -18,7 +19,7 @@ a{text-decoration: none; color: #111111;}
 #header .search-box{
     padding: 5px; 
     position: absolute; 
-    top: 5.5%; right: 10%; 
+    top: 3.4%; right: 19.5%; 
     transform: translate(0%, -50%); 
     height: 30px; 
     border-radius: 30px; 
@@ -52,7 +53,21 @@ a{text-decoration: none; color: #111111;}
     width: 150px;
 }
 
-#banner{width: 100%; height: 400px; background-color: #fefefe;}
+#banner{height: 400px; position: relative; overflow: hidden; background-color: #F2F2F2;} 
+#banner ul{width: 400%; height: 100%;transition: 1s;}
+#banner ul::after{content:"";display: block; clear: both;}
+#banner li > img {position: relative; top: 40px;}
+#banner li > img {float: left; top: 40px;}
+#banner li > img {float: left; top: 40px;}
+#banner input{display: none;}
+#banner label{display: inline-block; vertical-align: middle; width: 10px; height: 10px; border: 2px solid #666; background: #fff; transition: 0.3s; border-radius: 50%; cursor: pointer;}
+#banner .btn{text-align: center; position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center;}
+#btn1:checked~ul{margin-left: 0%;}
+#btn2:checked~ul{margin-left: -100%;}
+#btn3:checked~ul{margin-left: -200%;}
+#btn1:checked~.btn>label:nth-child(1){background:#666;}
+#btn2:checked~.btn>label:nth-child(2){background:#666;}
+#btn3:checked~.btn>label:nth-child(3){background:#666;}
 
 #information{overflow: hidden; width: 100%; height: 600px;}
 #information .welcome{width: 100%; height: 200px; background-color: #f5f5f5}
@@ -62,12 +77,12 @@ a{text-decoration: none; color: #111111;}
 #information .content{width: 100%; height: 200px; background-color: #c7c7c7}
 
 #images{overflow: hidden; width: 100%; height: auto;}
-#images .img1{float: left; width: 33.3333%; height: 300px; background-image:url('../image/El\ Pescador.jpg')}
-#images .img2{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Fisherwomen\ from\ Valencia\ \(1915\).jpg')}
-#images .img3{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Strolling\ along\ the\ Seashore\ \(19.jpg')}
-#images .img4{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Children\ On\ The\ Beach\,\ Valencia.jpg')}
-#images .img5{float: left; width: 33.3333%; height: 300px; background-image:url('../image/The\ Wounded\ Foot\ \(1909\).jpg')}
-#images .img6{float: left; width: 33.3333%; height: 300px; background-image:url('../image/Vuelta\ De\ La\ Pesca.\ Playa\ De\ Val.jpg')}
+#images .img1{float: left; width: 33.3333%; height: 300px; background-image:url('../image/1.png')}
+#images .img2{float: left; width: 33.3333%; height: 300px; background-image:url('../image/2.png')}
+#images .img3{float: left; width: 33.3333%; height: 300px; background-image:url('../image/3.png')}
+#images .img4{float: left; width: 33.3333%; height: 300px; background-image:url('../image/4.png')}
+#images .img5{float: left; width: 33.3333%; height: 300px; background-image:url('../image/5.png')}
+#images .img6{float: left; width: 33.3333%; height: 300px; background-image:url('../image/6.png')}
 
 #images .img1:hover{overflow: hidden; opacity: 0.3;}
 #images .img2:hover{overflow: hidden; opacity: 0.3;}
@@ -86,13 +101,45 @@ a{text-decoration: none; color: #111111;}
 #footer .logo{float: left; width: 50%; height: 200px; background-color: rgb(78, 71, 143);}
 #footer .links{float: left; width: 50%; height: 200px; background-color: rgb(45, 39, 102);}
 
-@media(max-width: 1200px){
+#back_to_top{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fefefe;
+    border-radius: 30%;
+    background-color: #fefefe;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 3%;
+    right: 11%;
+}
+
+#back_to_top .material-icons-outlined{
+    padding-left: 7.5px;
+    padding-top: 6px;
+    color: #111111;
+}
+
+#back_to_top:hover{
+    opacity: 0.5;
+}
+
+@media(max-width: 1470px){
+    #wrap{width: 1200px;}
+    #header .search-box{
+        top: 3.4%; right: 10%;
+    }
+}
+
+@media(max-width: 1250px){
+    #wrap{width: 100%;}
     #header .search-box{
         right: 2%;
     }
     #header .menu-bar{
-        padding-right: 530px;
+        padding-right: 25%;
     }
+
+
 }
 
 /* 화면 너비 0 ~ 768px */
@@ -116,9 +163,13 @@ a{text-decoration: none; color: #111111;}
     /* 작은 메뉴바 */
     #header{flex-direction: column;}
     #header .menu-bar{display: none; flex-direction: column; align-items: center; width: 100%; padding-right: 0px;}
-    #header .search-box{position: relative; display: none; margin-top: 33px; margin-left: 2.8%;}
+    #header .search-box{position: relative; display: none; margin-top: 33px; margin-left: 3%;}
     #header .menu-bar-btm{display: block;}
     #header .menu-bar.active, #header .search-box.active{display: flex;}
+
+    #back_to_top{
+        right: 2%;
+    }
 }
 
 /* 화면 너비 0 ~ 480px */
