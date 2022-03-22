@@ -1,0 +1,26 @@
+#header .menu-bar a:hover{color: #6b9bc0}
+
+#header .search-box:hover{box-shadow: 0 0 .5px 1px;}
+
+#header .search-box:hover > .search-txt{
+    padding: 0 6px;
+    width: 150px;
+}
+
+#information .opening-times:hover{ border-radius: 50%; background-color: #6b9bc0;}
+#information .admission:hover{border-radius: 50%; background-color: #6b9bc0;}
+#information .find-us:hover{border-radius: 50%; background-color: #6b9bc0;}
+
+#images .img1:hover{overflow: hidden; opacity: 0.3;}
+#images .img2:hover{overflow: hidden; opacity: 0.3;}
+#images .img3:hover{overflow: hidden; opacity: 0.3;}
+#images .img4:hover{overflow: hidden; opacity: 0.3;}
+#images .img5:hover{overflow: hidden; opacity: 0.3;}
+#images .img6:hover{overflow: hidden; opacity: 0.3;}
+
+.fa-facebook-f:hover{color: #31578a;}
+.fa-instagram:hover{color: #e77be9;}
+.fa-youtube:hover{color: #f52f2f}
+.fa-twitter:hover{color: #52b4f1;}
+
+#back_to_top:hover{opacity: 0.5;}

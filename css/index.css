@@ -1,22 +1,42 @@
 *{margin: 0; padding: 0; font-family: 'Frank Ruhl Libre', serif;}
 
-body{margin: 0; background-color: rgb(44, 44, 44);}
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #2698cb;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: #222; font-size: 13px;}
+
+body{background-color: rgb(44, 44, 44);}
+
+ul,li{list-style: none;}
 
 #wrap{width: 1200px; margin: 0 auto;}
 
-ul,li{list-style: none;}
-a{text-decoration: none; color: #111111;}
 
-#header{display: flex; justify-content: space-between; align-items: center; width: 98%; height: auto; background-color: #F2F2F2; padding: 10px 1%;}
-#header .logo{font-size: 30px; font-weight: bold;}
+#header{display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 98%; 
+    height: auto; 
+    background-color: #F2F2F2; 
+    padding: 10px 1%;
+}
+
+#header .logo{
+    font-size: 30px; 
+    font-weight: bold;
+}
 #header .logo a{font-family: 'Frank Ruhl Libre', serif;}
-#header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 280px;}
+#header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 0px;}
 #header .menu-bar li{ padding: 8px 15px; display: inline-block; font-size: 20px; font-weight: bold; transition: .5s;}
-#header .menu-bar a:hover{color: #6b9bc0}
-#header .menu-bar-btm{display: none; position: absolute; right: 17px; font-size: 20px;}
+#header .menu-bar-btm{display: none; position: absolute; right: 17px; font-size: 20px; color: #666;}
 
 /* 검색창 */
-#header .search-box{
+/* #header .search-box{
     padding: 5px; 
     position: absolute; 
     top: 6%; right: 19.5%; 
@@ -26,9 +46,7 @@ a{text-decoration: none; color: #111111;}
     border: 1px solid;
     transition: .5s;
 }
-#header .search-box:hover{
-    box-shadow: 0 0 .5px 1px;
-}
+
 #header .search-txt{
     padding: 0; 
     width: 0px; 
@@ -47,39 +65,32 @@ a{text-decoration: none; color: #111111;}
     width: 30px; 
     height: 30px; 
     border-radius: 30px;
-}
-#header .search-box:hover > .search-txt{
-    padding: 0 6px;
-    width: 150px;
-}
+} */
 
+/* 배너 */
 #banner{height: 400px; position: relative; overflow: hidden; background-color: #F2F2F2;} 
 #banner ul{width: 400%; height: 100%;transition: 1s;}
 #banner ul::after{content:"";display: block; clear: both;}
-#banner li > img { position: relative; top: 40px;}
 #banner li > img { float: left; top: 40px;}
 #banner li > img {float: left; top: 40px;}
 #banner input{display: none;}
-#banner label{display: inline-block; vertical-align: middle; width: 10px; height: 10px; border: 2px solid #666; background: #fff; transition: 0.3s; border-radius: 50%; cursor: pointer;}
+#banner label{display: inline-block; vertical-align: middle; width: 10px; height: 10px; border: 1.5px solid #F2F2F2; opacity: 0.5; background: transparent; transition: 0.3s; border-radius: 50%; cursor: pointer;}
 #banner .btn{text-align: center; position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center;}
 #btn1:checked~ul{margin-left: 0%;}
 #btn2:checked~ul{margin-left: -100%;}
 #btn3:checked~ul{margin-left: -200%;}
-#btn1:checked~.btn>label:nth-child(1){background:#666;}
-#btn2:checked~.btn>label:nth-child(2){background:#666;}
-#btn3:checked~.btn>label:nth-child(3){background:#666;}
+#btn1:checked~.btn>label:nth-child(1){background:#6b9bc0; opacity: 0.5;}
+#btn2:checked~.btn>label:nth-child(2){background:#6b9bc0; opacity: 0.5;}
+#btn3:checked~.btn>label:nth-child(3){background:#6b9bc0; opacity: 0.5;}
 
 #information{overflow: hidden; width: 100%; height: auto;}
-#information .welcome{width: 100%; height: 200px; background-color: #f5f5f5}
-#information .welcome > h1{font-family: 'Frank Ruhl Libre', serif;}
-#information .welcome > p{font-size: 20px;}
+#information .welcome{width: 100%; height: 150px; background-color: #f5f5f5}
+#information .welcome > h1{font-family: 'Frank Ruhl Libre', serif; font-size: 25px; padding: 14px 0px 2px 15px;}
+#information .welcome > p{font-size: 20px; padding: 0px 0px 0px 15px;}
 #information .time-admission-visit{display: flex; width: 100%; height: auto; background-color: #e9e9e9;}
 #information .opening-times{width: 200px; height: 200px; margin: 0px 100px 0px 100px; margin-top: 5px;}
 #information .admission{width: 200px; height: 200px; margin: 0px 100px 0px 100px; margin-top: 5px;}
 #information .find-us{width: 200px; height: 200px; margin: 0px 100px 0px 100px; margin-top: 5px;}
-#information .opening-times:hover{ border-radius: 50%; background-color: #6b9bc0;}
-#information .admission:hover{border-radius: 50%; background-color: #6b9bc0;}
-#information .find-us:hover{border-radius: 50%; background-color: #6b9bc0;}
 #information .content{width: 100%; height: 200px; background-color: #c7c7c7}
 
 
@@ -92,33 +103,30 @@ a{text-decoration: none; color: #111111;}
 #images .img5{float: left; width: 33.3333%; height: 300px; background-image:url('../image/5.jpg')}
 #images .img6{float: left; width: 33.3333%; height: 300px; background-image:url('../image/6.jpg')}
 
-#images .img1:hover{overflow: hidden; opacity: 0.3;}
-#images .img2:hover{overflow: hidden; opacity: 0.3;}
-#images .img3:hover{overflow: hidden; opacity: 0.3;}
-#images .img4:hover{overflow: hidden; opacity: 0.3;}
-#images .img5:hover{overflow: hidden; opacity: 0.3;}
-#images .img6:hover{overflow: hidden; opacity: 0.3;}
 
-#summary{overflow: hidden; width: 100%; height: 400px; background-color: #6b9bc0;}
-#summary .content1{float: left; width: 25%; height: 450px; background-color: rgb(124, 117, 192);}
-#summary .content2{float: left; width: 25%; height: 450px; background-color: rgb(100, 93, 158);}
-#summary .content3{float: left; width: 25%; height: 450px; background-color: rgb(86, 81, 131);}
-#summary .content4{float: left; width: 25%; height: 450px; background-color: rgb(69, 65, 105);}
+
+#summary{overflow: hidden; width: 100%; height: auto; background-color: #6b9bc0;  text-align: center; font-size: 15px;}
+#summary .content1{float: left; width: 25%; height: 300px; background-color: rgb(44, 44, 44); padding-top: 20px;}
+#summary .content2{float: left; width: 25%; height: 300px; background-color: rgb(44, 44, 44); padding-top: 20px;}
+#summary .content3{float: left; width: 25%; height: 300px; background-color: rgb(44, 44, 44); padding-top: 20px;}
+#summary .content4{float: left; width: 25%; height: 300px; background-color: rgb(44, 44, 44); padding-top: 20px;}
+#summary > div{color: #e9e9e9;}
 
 #footer{overflow: hidden; width: 100%; height: auto;}
-#footer .logo{float: left; width: 50%; height: 200px; background-color: rgb(78, 71, 143);}
-#footer .links{float: left; width: 50%; height: 200px;}
-#footer .link-box{position: relative; right: -65%; top: 65%;}
+#footer .logo{float: left; width: 50%; height: 150px; background-color: rgb(44, 44, 44);}
+#footer .logo-box{ position: relative; left: 5%; top: 55%;}
+#footer h1{color: #e9e9e9;}
+
+#footer .links{float: left; width: 50%; height: 150px;}
+#footer .link-box{position: relative; right: -65%; top: 50%;}
+
+/* 바로가기(페이스북, 인스타, 유튜브, 트위터) 간격 */
 .fa-facebook-f{padding: 1%;}
 .fa-instagram{padding: 1%;}
 .fa-youtube{padding: 1%;}
 .fa-twitter{padding: 1%;}
 
-.fa-facebook-f:hover{color: #31578a;}
-.fa-instagram:hover{color: #e77be9;}
-.fa-youtube:hover{color: #f52f2f}
-.fa-twitter:hover{color: #52b4f1;}
-
+/* 위로가기 버튼 박스 */
 #back_to_top{
     width: 40px;
     height: 40px;
@@ -131,79 +139,65 @@ a{text-decoration: none; color: #111111;}
     right: 11%;
 }
 
+/* 위로가기 버튼 화살표 */
 #back_to_top .material-icons-outlined{
     padding-left: 7.5px;
     padding-top: 6px;
     color: #111111;
 }
 
-#back_to_top:hover{
-    opacity: 0.5;
-}
 
-@media(max-width: 1470px){
-    #wrap{width: 100%px;}
-    #header .menu-bar{
-        padding-right: 25%;
-    }
-}
 
-@media(max-width: 1220px){
-    #wrap{width: 100%;}
-    #header .search-box{
-        top: 3.4%; right: 10%;
-    }
-    #header .search-box{
-        right: 2%;
-    }
+
+/* 화면 너비 조절 */
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px){
+    #wrap {width: 100%;}
 }
 
 /* 화면 너비 0 ~ 768px */
-@media(max-width: 980px){
-    #wrap{width: 100%;}
+@media (max-width: 768px){
+        /* 작은 메뉴바 */
+        #header{flex-direction: column;}
+        #header .menu-bar{display: none; flex-direction: column; align-items: center; width: 100%; padding-right: 0px;}
+        #header .search-box{position: relative; display: none; margin: 4% 0px 20px 38%;}
+        #header .menu-bar-btm{display: block;}
+        #header .menu-bar.active, #header .search-box.active{display: flex;}
 
-    #information .find-us{display: none;}
+        #btn1:checked~ul{margin-left: 0%;}
+        #btn2:checked~ul{margin-left: -59%;}
+        #btn3:checked~ul{margin-left: -160%;}
 
-    #images .img1{width: 50%;}
-    #images .img2{width: 50%;}
-    #images .img3{width: 50%;}
-    #images .img4{width: 50%;}
-    #images .img5{width: 50%;}
-    #images .img6{width: 50%;}
+        #information .welcome > h1{font-size: 20px;}
+        #information .welcome > p{font-size: 15px;}
+        
+        #information .time-admission-visit{
+            flex-direction: column;
+            align-items: center;
+        }
 
-    #summary .content1{width: 50%;}
-    #summary .content2{width: 50%;}
-    #summary .content3{width: 50%;}
-    #summary .content4{width: 50%;}
-
-    #footer .logo{width: 100%;}
-    #footer .links{width: 100%;}
-
-    /* 작은 메뉴바 */
-    #header{flex-direction: column;}
-    #header .menu-bar{display: none; flex-direction: column; align-items: center; width: 100%; padding-right: 0px;}
-    #header .search-box{position: relative; display: none; margin-top: 33px; margin-left: 3%;}
-    #header .menu-bar-btm{display: block;}
-    #header .menu-bar.active, #header .search-box.active{display: flex;}
-
-    #back_to_top{
-        right: 2%;
-    }
+        #images .img1{width: 50%;}
+        #images .img2{width: 50%;}
+        #images .img3{width: 50%;}
+        #images .img4{width: 50%;}
+        #images .img5{width: 50%;}
+        #images .img6{width: 50%;}
+    
+        #summary .content1{width: 50%;}
+        #summary .content2{width: 50%;}
+        #summary .content3{width: 50%;}
+        #summary .content4{width: 50%;}
+    
+        #footer .logo{width: 100%;}
+        #footer .links{width: 100%;}
 }
 
 /* 화면 너비 0 ~ 480px */
-@media(max-width: 480px){
-    #wrap{width: 100%;}
-
-    #information .information .opening-times{
-        width: 50%;
-    }
-    #information .information .admission{
-        width: 50%;
-    }
-    #information .information .find-us{
-        width: 100%
-    }
+@media (max-width: 480px){
+    #btn1:checked~ul{margin-left: 0%;}
+    #btn2:checked~ul{margin-left: -50%;}
+    #btn3:checked~ul{margin-left: -130%;}
 
     #images .img1{width: 100%;}
     #images .img2{width: 100%;}
@@ -216,4 +210,7 @@ a{text-decoration: none; color: #111111;}
     #summary .content2{width: 100%;}
     #summary .content3{width: 100%;}
     #summary .content4{width: 100%;}
+
+    #footer .link-box{right: -60%; top: 60%;}
+    #back_to_top{right: 3%;}
 }
