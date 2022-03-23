@@ -1,11 +1,12 @@
 #header .menu-bar a:hover{color: #6b9bc0}
 
-#header .search-box:hover{box-shadow: 0 0 .5px 1px;}
+/* 검색창 */
+/* .search-box:hover{box-shadow: 0 0 .5px 1px;}
 
-#header .search-box:hover > .search-txt{
+.search-box:hover > .search-txt{
     padding: 0 6px;
-    width: 150px;
-}
+    width: 100px;
+} */
 
 #information .opening-times:hover{ border-radius: 50%; background-color: #6b9bc0;}
 #information .admission:hover{border-radius: 50%; background-color: #6b9bc0;}

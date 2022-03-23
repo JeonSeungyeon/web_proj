@@ -1,0 +1,70 @@
+*{margin: 0; padding: 0; font-family: 'Frank Ruhl Libre', serif;}
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: #222; font-size: 15px;}
+
+body{background-color: rgb(44, 44, 44);}
+
+ul,li{list-style: none;}
+
+#wrap{width: 1200px; margin: 0 auto;}
+
+
+#header{display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 98%; 
+    height: auto; 
+    background-color: #F2F2F2; 
+    padding: 10px 1%;
+}
+
+#header .logo{
+    font-size: 30px; 
+    font-weight: bold;
+}
+#header .logo a{font-family: 'Frank Ruhl Libre', serif;}
+#header .menu-bar{display: flex; list-style: none; padding-left: 0; padding-right: 0px;}
+#header .menu-bar li{ padding: 8px 15px; display: inline-block; font-size: 20px; font-weight: 400; transition: .5s;}
+#header .menu-bar-btm{display: none; position: absolute; right: 17px; font-size: 20px; color: #666;}
+
+#header .menu-bar a:hover{color: #6b9bc0}
+
+.nav{width: 100%; height: 40px; background-color: #F2F2F2;}
+
+
+
+
+/* 화면 너비 조절 */
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px){
+    #wrap {width: 100%;}
+
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+        /* 작은 메뉴바 */
+        #header{flex-direction: column;}
+        #header .menu-bar{display: none; flex-direction: column; align-items: center; width: 100%; padding-right: 0px;}
+        #header .search-box{position: relative; display: none; margin: 4% 0px 20px 38%;}
+        #header .menu-bar-btm{display: block;}
+        #header .menu-bar.active, #header .search-box.active{display: flex;}
+
+        #footer .logo{width: 100%;}
+        #footer .links{width: 100%;}
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+
+    #footer .link-box{right: -60%; top: 60%;}
+    #back_to_top{right: 3%;}
+}
