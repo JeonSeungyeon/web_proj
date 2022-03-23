@@ -5,7 +5,6 @@ body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, lege
 
 /* a 링크 초기화 */
 a {color: #222; text-decoration: none;}
-a:hover {color: #2698cb;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: #222; font-size: 15px;}
@@ -103,6 +102,10 @@ ul,li{list-style: none;}
 .exhbition2-img{margin: 20px 20px 0px; height: 270px; background-image: url('../image/Children\ On\ The\ Beach\,\ Valencia_ccexpress\ \(1\).jpeg'); filter: grayscale(100%);}
 .exhbition3-img{margin: 20px 20px 0px; height: 270px; background-image: url('../image/102393642.1_ccexpress.jpeg'); filter: grayscale(100%);}
 
+.exhbition1-txt{text-align: center; padding: 4%;}
+.exhbition2-txt{text-align: center; padding: 4%;}
+.exhbition3-txt{text-align: center; padding: 4%;}
+
 
 #images{overflow: hidden; width: 100%; height: auto; margin-bottom: 20px;}
 #images .img1{float: left; width: 33.3333%; height: 300px; background-image:url('../image/1.jpg')}
@@ -111,7 +114,6 @@ ul,li{list-style: none;}
 #images .img4{float: left; width: 33.3333%; height: 300px; background-image:url('../image/4.jpg')}
 #images .img5{float: left; width: 33.3333%; height: 300px; background-image:url('../image/5.jpg')}
 #images .img6{float: left; width: 33.3333%; height: 300px; background-image:url('../image/6.jpg')}
-
 
 
 
@@ -130,13 +132,11 @@ ul,li{list-style: none;}
 #footer h1{color: #e9e9e9;}
 
 #footer .links{float: left; width: 50%; height: 170px;}
-#footer .link-box{position: relative; right: -65%; top: 50%;}
-
+#footer .link-box{list-style: none; position: relative; right: -65%; top: 50%;}
 /* 바로가기(페이스북, 인스타, 유튜브, 트위터) 간격 */
-.fa-facebook-f{padding: 1%;}
-.fa-instagram{padding: 1%;}
-.fa-youtube{padding: 1%;}
-.fa-twitter{padding: 1%;}
+#footer ul li{float: left; margin-left: 15px;}
+#footer ul li a{color: #f5f5f5;}
+
 
 /* 위로가기 버튼 박스 */
 #back_to_top{
