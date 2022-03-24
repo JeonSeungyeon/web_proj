@@ -10,6 +10,8 @@ a {color: #222; text-decoration: none;}
 body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: #222; font-size: 15px;}
 
 body{background-color: rgb(44, 44, 44);}
+/* 다크모드 */
+body.dark{background-color: #6b9bc0;}
 
 ul,li{list-style: none;}
 
@@ -136,14 +138,21 @@ input:focus {outline: none;}
         #header .search-box{position: relative; display: none; margin: 4% 0px 20px 38%;}
         #header .menu-bar-btm{display: block;}
         #header .menu-bar.active, #header .search-box.active{display: flex;}
-
-        #footer .logo{width: 100%;}
-        #footer .links{width: 100%;}
 }
 
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 480px){
-
-    #footer .link-box{right: -60%; top: 60%;}
     #back_to_top{right: 3%;}
 }
+
+body.dark{background-color: #2e313d;}
+body.dark a{color: #f5f7ff;}
+body.dark hr{background-color: #f5f7ff;}
+body.dark h1{color: #f5f7ff;}
+body.dark h4{color: #f5f7ff;}
+body.dark p{color: #f5f7ff;}
+body.dark div{color: #f5f7ff;}
+body.dark #header{background-color: #424755;}
+body.dark #header .menu-bar-btm{color: #f5f7f5;}
+body.dark .nav{background-color: #424755;}
+body.dark .language_switcher{background-color: #f8be51;}
