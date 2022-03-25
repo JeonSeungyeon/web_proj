@@ -4,10 +4,10 @@
 body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {margin:0; padding:0;}
 
 /* a 링크 초기화 */
-a {color: #222; text-decoration: none;}
+a {color: rgb(44, 44, 44); text-decoration: none;}
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: #222; font-size: 15px;}
+body, input, textarea, select, button, table {font-family: 'Frank Ruhl Libre', serif; color: rgb(44, 44, 44); font-size: 15px;}
 
 body{background-color: rgb(44, 44, 44);}
 
@@ -309,7 +309,7 @@ body.dark #information .new-exhbition{background-color: #424755;}
 body.dark #information .new-exhbition1{background-color: #585d6e;}
 body.dark #information .new-exhbition2{background-color: #585d6e;}
 body.dark #information .new-exhbition3{background-color: #585d6e;}
-#summary{overflow: hidden; width: 100%; height: auto; text-align: center; font-size: 15px;}
+
 body.dark #summary .content1{background-color: #424755;}
 body.dark #summary .content2{background-color: #424755;}
 body.dark #summary .content3{background-color: #424755;}
