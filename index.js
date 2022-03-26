@@ -1,7 +1,7 @@
 // 메뉴바 자바스크립트
 const btn = document.querySelector('.menu-bar-btm')
 const menu = document.querySelector('.menu-bar')
-const search = document.querySelector('.search-box')
+
 
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
