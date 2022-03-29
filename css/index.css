@@ -72,10 +72,8 @@ ul,li{list-style: none;}
     transition: .4s;
 }
 .search-box:hover > .search-txt{width: 130px;}
- /* outline 테두리 속성 수정 */
-input:focus {outline: 2px solid;}
-/* outline 테두리 없애기 */
-input:focus {outline: none;} 
+
+
 
 /* 언어 변경 */
 .language_switcher{float: left; margin: 5px 5px 5px 17px; padding: 4px; background-color: #6b9bc0; border-radius: 50%;}
@@ -114,7 +112,7 @@ input:focus {outline: none;}
 .checkbox:checked + label .ball{transform: translateX(23px);}
 
 /* 배너 */
-#banner{height: 400px; position: relative; overflow: hidden; background-color: #F2F2F2;} 
+#banner{height: 400px; position: relative; overflow: hidden;} 
 #banner ul{width: 400%; height: 100%;transition: 1s;}
 #banner ul::after{content:"";display: block; clear: both;}
 #banner li > img { float: left; top: 40px;}
@@ -224,10 +222,14 @@ input:focus {outline: none;}
 @media (max-width: 768px){
         /* 작은 메뉴바 */
         #header{flex-direction: column;}
-        #header .menu-bar{display: none; flex-direction: column; align-items: center; width: 100%; padding-right: 0px;}
-        #header .search-box{position: relative; display: none; margin: 4% 0px 20px 38%;}
+        #header .menu-bar{
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            width: 100%; 
+            padding-right: 0px;}
         #header .menu-bar-btm{display: block;}
-        #header .menu-bar.active, #header .search-box.active{display: flex;}
+        #header .menu-bar.active{display: flex;}
 
         /* 배너 이동하는 위치 조절 */
         #btn1:checked~ul{margin-left: 0%;}
