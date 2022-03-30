@@ -249,12 +249,12 @@ ul,li{list-style: none;}
         #information .new-exhbition2{margin-left: 0px;}
         #information .new-exhbition3{display: none;}
 
-        #images .img1{width: 50%; background-image: url('../image/768-1.jpeg');}
-        #images .img2{width: 50%; background-image: url('../image/768-2.jpeg');}
-        #images .img3{width: 50%; background-image: url('../image/768-3.jpeg');}
-        #images .img4{width: 50%; background-image: url('../image/768-4.jpeg');}
-        #images .img5{width: 50%; background-image: url('../image/769-5.jpeg');}
-        #images .img6{width: 50%; background-image: url('../image/768-6.jpeg');}
+        #images .img1{width: 50%; background-image: url('../image/480-1.jpg');}
+        #images .img2{width: 50%; background-image: url('../image/480-2.jpg');}
+        #images .img3{width: 50%; background-image: url('../image/480-3.jpg');}
+        #images .img4{width: 50%; background-image: url('../image/480-4.jpg');}
+        #images .img5{width: 50%; background-image: url('../image/480-5.jpg');}
+        #images .img6{width: 50%; background-image: url('../image/480-6.jpg');}
     
         #summary .content1{width: 50%;}
         #summary .content2{width: 50%;}
